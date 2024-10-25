@@ -34,7 +34,9 @@ const Login = () => {
         }
     };
 
-    console.log('errors', errors);
+    const handleClickSignUp = () => {
+        navigate('/signup')
+    }
 
     return (<>
         <Header />
@@ -56,7 +58,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText onClick={handleClickSignUp}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
